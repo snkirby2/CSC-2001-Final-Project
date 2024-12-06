@@ -16,11 +16,17 @@ body {
     padding: 0;
 }
 
+/* Header Styles */
 header {
     padding: 20px;
     text-align: center;
+    border: 2px solid lightpink;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
+/* Navigation Styles */
 nav {
     background-color: var(--primary-color);
     color: white;
@@ -43,6 +49,7 @@ nav a {
     text-decoration: none;
 }
 
+/* Button Styles */
 button#theme-toggle {
     margin: 20px;
     padding: 10px 20px;
@@ -56,6 +63,7 @@ button#theme-toggle:hover {
     background-color: #2980b9;
 }
 
+/* Project Card Styles */
 .project-card {
     margin-top: 20px;
     padding: 10px;
@@ -72,6 +80,16 @@ button#theme-toggle:hover {
 .project-card a {
     color: var(--primary-color);
     text-decoration: none;
+}
+
+/* Add light pink border and white background for text sections */
+#home, #about, #projects, #contact {
+    background-color: white; /* White background */
+    border: 2px solid lightpink; /* Light pink border */
+    padding: 20px; /* Add some padding for better spacing */
+    margin: 20px auto; /* Center sections with some margin */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for aesthetic */
 }
 
 /* Dark Mode Styles */

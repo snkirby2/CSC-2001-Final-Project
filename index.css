@@ -1,0 +1,106 @@
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #333;
+    --background-color-dark: #333;
+    --text-color-dark: #fff;
+    --primary-color: #3498db;
+}
+
+/* Basic Styles */
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    font-family: Georgia, serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button#theme-toggle {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button#theme-toggle:hover {
+    background-color: #2980b9;
+}
+
+.project-card {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Ensure the text inside the project cards stays black */
+.project-card p {
+    color: #333; /* Make text inside the project cards black */
+}
+
+.project-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body, header, button, .project-card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Responsive Layout using Flexbox */
+section {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header, nav, section {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}

@@ -72,24 +72,19 @@ button#theme-toggle:hover {
     background-color: #f9f9f9;
 }
 
-/* Ensure the text inside the project cards stays black */
-.project-card p {
-    color: #333; /* Make text inside the project cards black */
-}
-
 .project-card a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-/* Add light pink border and white background for text sections */
+/* Light pink border and white background for sections */
 #home, #about, #projects, #contact {
-    background-color: white; /* White background */
-    border: 2px solid lightpink; /* Light pink border */
-    padding: 20px; /* Add some padding for better spacing */
-    margin: 20px auto; /* Center sections with some margin */
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for aesthetic */
+    background-color: white;
+    border: 2px solid lightpink;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Dark Mode Styles */
@@ -102,16 +97,8 @@ body, header, button, .project-card {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Responsive Layout using Flexbox */
-section {
-    padding: 20px;
-}
-
+/* Responsive Layout */
 @media (max-width: 768px) {
-    header, nav, section {
-        padding: 10px;
-    }
-
     nav ul {
         display: block;
         text-align: center;
